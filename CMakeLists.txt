@@ -3,4 +3,4 @@ project(UnderGears)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(UnderGears main.cpp)
+add_executable(UnderGears main.cpp ULog.cpp ULog.h UCore.cpp UCore.h)
