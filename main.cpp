@@ -1,4 +1,4 @@
-#include <iostream>
+#include <cstdio>
 #include "UCore.h"
 
 /*This is the main entry point. The loop is running here.
@@ -13,12 +13,13 @@ int main() {
     // start of loop
     while (ucore->getState() == RUNNING) {
 
-        std::string input;
-        std::cin >> input;
+        const char *input = "julien";
+        printf("%s \n", input);
 
-        if (input == "exit") {
-            ucore->setState(ENDING);
-        }
+        ucore->setState(ENDING);
+//        if (scanf(input)) {
+//            ucore->setState(ENDING);
+//        }
     }
     delete ucore;
 
